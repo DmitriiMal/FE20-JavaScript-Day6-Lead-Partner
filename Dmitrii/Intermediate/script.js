@@ -98,9 +98,9 @@ for (let i = 0; i < employees.length; i++) {
   <th scope="row">${employeesObj[i].userId}</th>
   <td>${employeesObj[i].firstName}</td>
   <td>${employeesObj[i].lastName}</td>
-  <td>@${employeesObj[i].emailAddress}</td>
-  <td>@${employeesObj[i].jobTitleName}</td>
-  <td>@${employeesObj[i].salary}</td>
+  <td>${employeesObj[i].emailAddress}</td>
+  <td>${employeesObj[i].jobTitleName}</td>
+  <td>${employeesObj[i].salary}</td>
   </tr>
   `;
 }
