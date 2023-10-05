@@ -54,15 +54,16 @@ if (localStorage.getItem('books')) {
 const result = document.querySelector('#result');
 
 for (let i = 0; i < booksObj.length; i++) {
-  result.innerHTML += ` <div>
-  <div class="card my-2 my-card">
-  <img src="${booksObj[i].img}" class="card-img-top" alt="...">
-  <div class="card-body">
-  <h5 class="card-title">${booksObj[i].title}</h5>
-  <p class="card-text">Autor: ${booksObj[i].author}</p>
-  <a href="#" class="btn btn-primary my-btn"></a>
-  </div>
-  </div>
+  result.innerHTML += ` 
+  <div>
+    <div class="card my-2 my-card">
+      <img src="${booksObj[i].img}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${booksObj[i].title}</h5>
+        <p class="card-text">Autor: ${booksObj[i].author}</p>
+        <a href="#" class="btn btn-primary my-btn"></a>
+      </div>
+    </div>
   </div>
   `;
 }
