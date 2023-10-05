@@ -56,7 +56,7 @@ for (let i = 0; i < booksObj.length; i++) {
   <div class="card-body">
   <h5 class="card-title">${booksObj[i].title}</h5>
   <p class="card-text">Autor: ${booksObj[i].author}</p>
-  <a href="#" class="btn btn-primary my-btn">Read</a>
+  <a href="#" class="btn btn-primary my-btn"></a>
   </div>
   </div>
   `;
@@ -65,6 +65,11 @@ for (let i = 0; i < booksObj.length; i++) {
 const btns = document.querySelectorAll('.my-btn');
 
 for (let i = 0; i < booksObj.length; i++) {
+  if (booksObj[i].read == 'true') {
+    btns[i].innerHTML = 'Read';
+  } else {
+    btns[i].innerHTML = 'Not read yet';
+  }
   btns[i].addEventListener('click', function () {
     if (booksObj[i].read == true) {
       btns[i].innerHTML = 'Not read yet';
